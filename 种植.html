@@ -3,28 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>种植详情</title>
+    <title>种植详情 - 爱农晋祠智慧农场</title>
     <style>
-        * { margin:0; padding:0; box-sizing:border-box; font-family:sans-serif; }
-        body { background:#f5f5f5; }
-        .header { background:#000; color:#fff; padding:20px; text-align:center; }
-        .container { padding:20px; }
-        .title { font-size:22px; text-align:center; margin-bottom:20px; }
-        .info { background:#fff; padding:15px; border-radius:10px; margin-bottom:10px; }
-        .back { text-align:center; margin-top:20px; }
-        .back a { background:#00c853; color:#fff; padding:10px 25px; border-radius:30px; text-decoration:none; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        body {
+            background: #f5f5f5;
+        }
+        .header {
+            background: #000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+        }
+        .title {
+            font-size: 22px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .img-box {
+            margin-bottom: 12px;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        .img-box img {
+            width: 100%;
+            display: block;
+        }
+        .back {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .back a {
+            display: inline-block;
+            background: #00c853;
+            color: #fff;
+            padding: 10px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
     <div class="header">
         <h2>种植详情</h2>
     </div>
+
     <div class="container">
-        <div class="title">种植信息</div>
-        <div class="info">种植户：白要忠</div>
-        <div class="info">作物：</div>
-        <div class="info">品种：</div>
-        <div class="info">时间：</div>
+        <div class="title">种植实拍</div>
+
+        <!-- 你新上传的5张图片，路径100%匹配 -->
+        <div class="img-box">
+            <img src="1.jpg">
+        </div>
+        <div class="img-box">
+            <img src="2.jpg">
+        </div>
+        <div class="img-box">
+            <img src="3.jpg">
+        </div>
+        <div class="img-box">
+            <img src="4.jpg">
+        </div>
+        <div class="img-box">
+            <img src="5.jpg">
+        </div>
+
         <div class="back">
             <a href="index.html">← 返回主页</a>
         </div>
