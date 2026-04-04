@@ -8,7 +8,6 @@
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif; }
         body { background: #f5f5f5; }
 
-        /* 顶部横幅样式 */
         .banner {
             width: 100%;
             display: block;
@@ -19,7 +18,6 @@
             display: block;
         }
 
-        /* 大棚信息容器 */
         .container {
             background: #fff;
             margin: 10px;
@@ -71,7 +69,6 @@
             color: #333;
         }
         
-        /* 功能模块按钮 */
         .模块 {
             margin: 20px 10px;
             padding: 15px;
@@ -91,7 +88,6 @@
         .模块-name { flex: 1; font-size: 18px; }
         .arrow { color: #999; font-size: 18px; }
 
-        /* 底部园区介绍区域 */
         .bottom-section {
             background: #fff;
             margin: 10px;
@@ -99,7 +95,6 @@
             padding: 20px;
         }
 
-        /* 园区大门图样式 */
         .园区大门图 {
             width: 100%;
             border-radius: 8px;
@@ -107,7 +102,6 @@
             display: block;
         }
 
-        /* 园区基础信息（红圈部分） */
         .园区基础信息 {
             margin-bottom: 20px;
             line-height: 1.8;
@@ -119,16 +113,13 @@
             margin-bottom: 5px;
         }
 
-        /* 园区详细介绍 */
         .园区介绍 {
             line-height: 1.8;
             font-size: 15px;
             color: #333;
             margin-bottom: 20px;
-            text-indent: 2em;
         }
 
-        /* 导航链接 */
         .导航链接 {
             font-size: 18px;
             font-weight: bold;
@@ -144,7 +135,6 @@
             line-height: 1.6;
         }
 
-        /* 公众号二维码区域（带黑框） */
         .公众号区域 {
             display: flex;
             align-items: center;
@@ -155,35 +145,34 @@
             flex-wrap: wrap;
         }
         .公众号二维码 {
-            width: 200px;
-            height: 200px;
+            width: 120px;
+            height: 120px;
             border-radius: 4px;
         }
         .公众号文字 {
             flex: 1;
-            min-width: 250px;
-            line-height: 1.8;
+            min-width: 200px;
         }
         .公众号标题 {
-            font-size: 20px;
+            font-size: 18px;
             font-weight: bold;
-            color: #000;
-            margin-bottom: 5px;
+            margin-bottom: 4px;
         }
         .公众号标语 {
-            font-size: 16px;
+            font-size: 14px;
             color: #333;
+            line-height: 1.6;
         }
     </style>
 </head>
 <body>
 
-<!-- 顶部宣传横幅 -->
+<!-- 顶部横幅 -->
 <div class="banner">
     <img src="banner.jpg" alt="山西爱农晋祠现代农业园">
 </div>
 
-<!-- 一号大棚核心信息 -->
+<!-- 大棚信息 -->
 <div class="container">
     <div class="棚头">
         <div class="img-box">
@@ -220,7 +209,7 @@
     </div>
 </div>
 
-<!-- 功能跳转模块 -->
+<!-- 功能模块 -->
 <div class="模块">
     <a class="模块项" href="环境.html">
         <div class="模块-icon">🍃</div>
@@ -228,31 +217,25 @@
         <div class="arrow">></div>
     </a>
     <a class="模块项" href="种植.html">
-        <div class="module-icon">🌱</div>
+        <div class="模块-icon">🌱</div>
         <div class="模块-name">种植详情</div>
         <div class="arrow">></div>
     </a>
 </div>
 
-<!-- 底部完整区域 -->
+<!-- 底部信息 -->
 <div class="bottom-section">
-    <!-- 1. 园区大门图（放在红圈文字上方） -->
-    <img src="gate.jpg" alt="爱农晋祠现代农业园大门" class="园区大门图">
+    <img src="gate.jpg" alt="园区大门" class="园区大门图">
 
-    <!-- 2. 红圈部分的基础信息 -->
     <div class="园区基础信息">
         <strong>山西爱农晋祠现代农业园</strong>
-        <span>电话预购：15235197597</span>
+        电话预购：15235197597
     </div>
 
-    <!-- 3. 园区详细介绍 -->
     <div class="园区介绍">
-        农场名称：山西爱农晋祠现代农业园<br>
-        园区位于太原市晋源区王郭村，由返乡新农人邓万杰创办，总占地700余亩。<br>
-        园区将撂荒40年的汾河荒滩改造为良田，建设现代化智能温室大棚，采用无土栽培、水肥一体化等先进技术，主要种植优质瓜果蔬菜。
+        爱农晋祠智慧农场位于太原市晋源区王郭村，由山西爱农晋祠现代农业有限公司投资兴建，总投资1500万元，总占地700余亩，建有高标准智能温室大棚42座。园区主要种植草莓、甜瓜、蘑菇、西红柿等优质果蔬，积极推行现代农业种植技术。项目创新运营模式，将传统雇佣制改为农户合伙制，免费提供大棚给农户种植经营，有效激发生产积极性，实现农民增收、农业增效，以产业发展助力乡村振兴。
     </div>
 
-    <!-- 4. 导航链接 + 具体地址 -->
     <a href="https://ditu.amap.com/search?query=太原市晋源区王郭村爱农晋祠现代农业园" target="_blank" class="导航链接">
         📍 点击导航前往园区
     </a>
@@ -260,20 +243,14 @@
         具体地址：山西省太原市晋源区晋祠镇王郭村爱农晋祠现代农业园
     </div>
 
-    <!-- 5. 公众号二维码（带黑框） -->
     <div class="公众号区域">
-        <img src="qrcode.jpg" alt="云上爱农公众号二维码" class="公众号二维码">
+        <img src="qrcode.jpg" alt="公众号二维码" class="公众号二维码">
         <div class="公众号文字">
             <div class="公众号标题">云上爱农公众号</div>
-            <div class="公众号标语">
-                为农业插上智慧的翅膀<br>
-                让丰收在云上翱翔。
-            </div>
+            <div class="公众号标语">为农业插上智慧的翅膀<br>让丰收在云上翱翔。</div>
         </div>
     </div>
 </div>
 
-</body>
-</html>
 </body>
 </html>
