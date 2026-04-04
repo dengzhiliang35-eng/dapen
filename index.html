@@ -52,7 +52,6 @@
         .模块项 {
             display: flex; align-items: center;
             padding: 15px 0; border-bottom: 1px solid #eee;
-            cursor: pointer;
             text-decoration: none;
             color: inherit;
         }
@@ -60,21 +59,6 @@
         .模块-icon { font-size: 24px; margin-right: 10px; }
         .模块-name { flex: 1; font-size: 18px; }
         .arrow { color: #999; font-size: 18px; }
-
-        /* 生长环境图片 整合版 */
-        .环境图片 {
-            margin-top: 15px;
-            display: none;
-        }
-        .环境图片.show {
-            display: block;
-        }
-        .环境图片 img {
-            width: 100%;
-            border-radius: 10px;
-            margin-bottom: 10px;
-            display: block;
-        }
     </style>
 </head>
 <body>
@@ -101,29 +85,21 @@
             <div class="信息项">种植品种 </div>
             <div class="信息项">种植时间 </div>
         </div>
-
-        <!-- 👇 生长环境 4 张图片 全部整合在这里 👇 -->
-        <div class="环境图片" id="envImg">
-            <img src="env1.jpg.jpg">
-            <img src="env2.jpg.jpg">
-            <img src="env3.jpg.jpg">
-            <img src="env4.jpg.jpg">
-        </div>
     </div>
 
     <div class="模块">
-        <!-- 点击生长环境 → 直接展开图片 -->
-        <div class="模块项" onclick="document.getElementById('envImg').classList.toggle('show')">
+        <!-- 点击这里 → 跳转到环境.html -->
+        <a class="模块项" href="环境.html">
             <div class="模块-icon">🍃</div>
             <div class="模块-name">生长环境</div>
             <div class="arrow">></div>
-        </div>
+        </a>
 
-        <div class="模块项">
+        <a class="模块项" href="种植.html">
             <div class="模块-icon">🌱</div>
             <div class="模块-name">种植详情</div>
             <div class="arrow">></div>
-        </div>
+        </a>
     </div>
 </body>
 </html>
