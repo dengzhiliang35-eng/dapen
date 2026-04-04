@@ -8,7 +8,6 @@
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif; }
         body { background: #f5f5f5; }
 
-        /* 顶部横幅样式 */
         .banner {
             width: 100%;
             display: block;
@@ -17,10 +16,8 @@
             width: 100%;
             height: auto;
             display: block;
-            border-radius: 0 0 10px 10px;
         }
 
-        /* 大棚信息容器 */
         .container {
             background: #fff;
             margin: 10px;
@@ -36,7 +33,7 @@
         }
         .棚头 .img-box {
             width: 120px; 
-            height: 90px; 
+            height: 120px;
             border-radius: 8px;
             overflow: hidden;
             border: 1px solid #eee;
@@ -57,7 +54,7 @@
             display: grid; 
             grid-template-columns: 1fr 1fr; 
             gap: 10px; 
-            margin: 15px 0; 
+            margin: 15px 0;
         }
         .信息项 { 
             background: #f5f5f5; 
@@ -72,7 +69,6 @@
             color: #333;
         }
         
-        /* 功能模块按钮 */
         .模块 {
             margin: 20px 10px;
             padding: 15px;
@@ -92,7 +88,6 @@
         .模块-name { flex: 1; font-size: 18px; }
         .arrow { color: #999; font-size: 18px; }
 
-        /* 底部园区介绍区域（完全匹配截图） */
         .bottom-section {
             background: #fff;
             margin: 10px;
@@ -100,89 +95,85 @@
             padding: 20px;
         }
 
-        /* 园区大门图样式 */
         .园区大门图 {
             width: 100%;
             border-radius: 8px;
             margin-bottom: 20px;
-            display: block;
         }
 
-        /* 园区基础信息（红圈部分） */
         .园区基础信息 {
-            margin-bottom: 20px;
-            line-height: 1.8;
             font-size: 16px;
+            line-height: 1.8;
+            margin-bottom: 15px;
         }
         .园区基础信息 strong {
-            font-size: 28px;
+            font-size: 20px;
             display: block;
-            margin-bottom: 8px;
-            font-weight: bold;
-        }
-        .园区基础信息 span {
-            font-size: 22px;
+            margin-bottom: 5px;
         }
 
-        /* 园区详细介绍 */
         .园区介绍 {
+            font-size: 15px;
             line-height: 1.8;
-            font-size: 18px;
             color: #333;
-            margin-bottom: 30px;
+            margin-bottom: 25px;
         }
 
-        /* 导航链接 */
         .导航链接 {
-            font-size: 24px;
+            font-size: 17px;
             font-weight: bold;
             color: #00a653;
-            margin-bottom: 15px;
+            margin-bottom: 8px;
             display: block;
             text-decoration: none;
         }
         .导航地址 {
-            font-size: 18px;
+            font-size: 14px;
             color: #666;
-            margin-bottom: 30px;
-            line-height: 1.6;
+            margin-bottom: 25px;
         }
 
-        /* 公众号二维码区域（完全匹配截图：上下排版+黑框） */
+        /* 分隔线 */
+        .divider {
+            height: 1px;
+            background: #ddd;
+            margin: 25px 0;
+        }
+
+        /* 公众号区域：无框 + 文字在右侧 */
         .公众号区域 {
-            border: 3px solid #000;
-            border-radius: 12px;
-            padding: 30px 20px;
-            text-align: left;
+            display: flex;
+            align-items: center;
+            gap: 15px;
         }
         .公众号二维码 {
-            width: 280px;
-            height: 280px;
-            margin: 0 auto 25px auto;
-            display: block;
+            width: 100px;
+            height: 100px;
             border-radius: 4px;
         }
+        .公众号文字 {
+            flex: 1;
+        }
         .公众号标题 {
-            font-size: 28px;
+            font-size: 16px;
             font-weight: bold;
-            color: #000;
-            margin-bottom: 10px;
+            margin-bottom: 4px;
         }
         .公众号标语 {
-            font-size: 20px;
-            color: #333;
-            line-height: 1.6;
+            font-size: 13px;
+            color: #666;
+            line-height: 1.5;
         }
     </style>
 </head>
 <body>
 
-<!-- 顶部宣传横幅 -->
+<!-- 顶部横幅 -->
 <div class="banner">
     <img src="banner.jpg" alt="山西爱农晋祠现代农业园">
 </div>
 
-<!-- 一号大棚核心信息 -->
+<!-- 大棚信息 -->
 <div class="container">
     <div class="棚头">
         <div class="img-box">
@@ -219,7 +210,7 @@
     </div>
 </div>
 
-<!-- 功能跳转模块 -->
+<!-- 功能模块 -->
 <div class="模块">
     <a class="模块项" href="环境.html">
         <div class="模块-icon">🍃</div>
@@ -233,23 +224,19 @@
     </a>
 </div>
 
-<!-- 底部完整区域（完全匹配手机截图） -->
+<!-- 底部信息 -->
 <div class="bottom-section">
-    <!-- 1. 园区大门图 -->
-    <img src="gate.jpg" alt="爱农晋祠现代农业园大门" class="园区大门图">
+    <img src="gate.jpg" class="园区大门图" alt="园区大门">
 
-    <!-- 2. 园区基础信息 -->
     <div class="园区基础信息">
         <strong>山西爱农晋祠现代农业园</strong>
-        <span>电话预购：15235197597</span>
+        电话预购：15235197597
     </div>
 
-    <!-- 3. 园区详细介绍 -->
     <div class="园区介绍">
         爱农晋祠智慧农场位于太原市晋源区王郭村，由山西爱农晋祠现代农业有限公司投资兴建，总投资1500万元，总占地700余亩，建有高标准智能温室大棚42座。园区主要种植草莓、甜瓜、蘑菇、西红柿等优质果蔬，积极推行现代农业种植技术。项目创新运营模式，将传统雇佣制改为农户合伙制，免费提供大棚给农户种植经营，有效激发生产积极性，实现农民增收、农业增效，以产业发展助力乡村振兴。
     </div>
 
-    <!-- 4. 导航链接 + 具体地址 -->
     <a href="https://ditu.amap.com/search?query=太原市晋源区王郭村爱农晋祠现代农业园" target="_blank" class="导航链接">
         📍 点击导航前往园区
     </a>
@@ -257,18 +244,18 @@
         具体地址：山西省太原市晋源区晋祠镇王郭村爱农晋祠现代农业园
     </div>
 
-    <!-- 5. 公众号二维码（完全匹配截图：上下排版+黑框） -->
+    <!-- 一条横线分隔 -->
+    <div class="divider"></div>
+
+    <!-- 公众号：无框 + 文字在右边 -->
     <div class="公众号区域">
-        <img src="qrcode.jpg" alt="云上爱农公众号二维码" class="公众号二维码">
-        <div class="公众号标题">云上爱农公众号</div>
-        <div class="公众号标语">
-            为农业插上智慧的翅膀<br>
-            让丰收在云上翱翔。
+        <img src="qrcode.jpg" class="公众号二维码" alt="公众号二维码">
+        <div class="公众号文字">
+            <div class="公众号标题">云上爱农公众号</div>
+            <div class="公众号标语">为农业插上智慧的翅膀<br>让丰收在云上翱翔。</div>
         </div>
     </div>
 </div>
 
-</body>
-</html>
 </body>
 </html>
