@@ -7,22 +7,24 @@
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif; }
         body { background: #f5f5f5; }
-        
-        /* 顶部宣传横幅样式 */
+
+        /* 顶部宣传图 */
         .banner {
             width: 100%;
-            overflow: hidden;
-            border-radius: 0 0 10px 10px;
+            display: block;
         }
         .banner img {
             width: 100%;
             height: auto;
             display: block;
-            object-fit: cover;
         }
 
-        .header { background: #000; color: #fff; padding: 15px; text-align: center; display: none; } /* 隐藏原黑色标题栏，用横幅替代 */
-        .container { background: #fff; margin: 10px; border-radius: 10px; padding: 15px; }
+        .container {
+            background: #fff;
+            margin: 10px;
+            border-radius: 10px;
+            padding: 15px;
+        }
         
         .棚头 { 
             display: flex; 
@@ -33,7 +35,7 @@
         .棚头 .img-box {
             width: 120px; 
             height: 90px; 
-            border-radius: 8px; 
+            border-radius: 8px;
             overflow: hidden;
             border: 1px solid #eee;
         }
@@ -68,10 +70,17 @@
             color: #333;
         }
         
-        .模块 { margin: 20px 0; padding: 15px; background: #fff; border-radius: 10px; }
+        .模块 {
+            margin: 20px 10px;
+            padding: 15px;
+            background: #fff;
+            border-radius: 10px;
+        }
         .模块项 {
-            display: flex; align-items: center;
-            padding: 15px 0; border-bottom: 1px solid #eee;
+            display: flex;
+            align-items: center;
+            padding: 15px 0;
+            border-bottom: 1px solid #eee;
             text-decoration: none;
             color: inherit;
         }
@@ -79,61 +88,85 @@
         .模块-icon { font-size: 24px; margin-right: 10px; }
         .模块-name { flex: 1; font-size: 18px; }
         .arrow { color: #999; font-size: 18px; }
+
+        /* 底部园区介绍 */
+        .bottom-info {
+            background: #fff;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 15px;
+            line-height: 1.7;
+            color: #333;
+        }
+        .bottom-info strong {
+            color: #000;
+        }
     </style>
 </head>
 <body>
-    <!-- 页面最顶部：宣传横幅 -->
-    <div class="banner">
-        <img src="banner.jpg" alt="爱农晋祠现代农业园">
-    </div>
 
-    <div class="container">
-        <div class="棚头">
-            <div class="img-box">
-                <img src="dapeng.jpg" alt="一号大棚实拍">
-            </div>
-            <div class="棚信息">
-                <div class="棚名">一号大棚</div>
-                <div class="棚ID">ID: 一号大棚</div>
-                <div class="状态">正常种植</div>
-            </div>
+<!-- 顶部横幅图 -->
+<div class="banner">
+    <img src="banner.jpg" alt="山西爱农晋祠现代农业园">
+</div>
+
+<div class="container">
+    <div class="棚头">
+        <div class="img-box">
+            <img src="dapeng.jpg" alt="一号大棚实拍">
         </div>
-
-        <div class="基础信息">
-            <div class="信息项">
-                <span class="label">棚号</span>
-                1号棚
-            </div>
-            <div class="信息项">
-                <span class="label">种植户</span>
-                张毅炫
-            </div>
-            <div class="信息项">
-                <span class="label">种植作物</span>
-                甜瓜
-            </div>
-            <div class="信息项">
-                <span class="label">种植品种</span>
-                爱农蜜瓜
-            </div>
-            <div class="信息项">
-                <span class="label">定植时间</span>
-                2026年3月10号
-            </div>
+        <div class="棚信息">
+            <div class="棚名">一号大棚</div>
+            <div class="棚ID">ID: 一号大棚</div>
+            <div class="状态">正常种植</div>
         </div>
     </div>
 
-    <div class="模块">
-        <a class="模块项" href="环境.html">
-            <div class="模块-icon">🍃</div>
-            <div class="模块-name">生长环境</div>
-            <div class="arrow">></div>
-        </a>
-        <a class="模块项" href="种植.html">
-            <div class="模块-icon">🌱</div>
-            <div class="模块-name">种植详情</div>
-            <div class="arrow">></div>
-        </a>
+    <div class="基础信息">
+        <div class="信息项">
+            <span class="label">棚号</span>
+            1号棚
+        </div>
+        <div class="信息项">
+            <span class="label">种植户</span>
+            张毅炫
+        </div>
+        <div class="信息项">
+            <span class="label">种植作物</span>
+            甜瓜
+        </div>
+        <div class="信息项">
+            <span class="label">种植品种</span>
+            爱农蜜瓜
+        </div>
+        <div class="信息项">
+            <span class="label">定植时间</span>
+            2026年3月10号
+        </div>
     </div>
+</div>
+
+<div class="模块">
+    <a class="模块项" href="环境.html">
+        <div class="模块-icon">🍃</div>
+        <div class="模块-name">生长环境</div>
+        <div class="arrow">></div>
+    </a>
+    <a class="模块项" href="种植.html">
+        <div class="模块-icon">🌱</div>
+        <div class="模块-name">种植详情</div>
+        <div class="arrow">></div>
+    </a>
+</div>
+
+<!-- 底部园区介绍信息 -->
+<div class="bottom-info">
+    <strong>山西爱农晋祠现代农业园</strong><br>
+    电话预购：15235197597<br><br>
+    农场名称：山西爱农晋祠现代农业园<br>
+    园区位于太原市晋源区王郭村，由返乡新农人邓万杰创办，总占地700余亩。园区将撂荒40年的汾河荒滩改造为良田，建设现代化智能温室大棚，采用无土栽培、水肥一体化等先进技术，主要种植优质瓜果蔬菜。
+</div>
+
 </body>
 </html>
