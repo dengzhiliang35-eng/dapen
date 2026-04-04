@@ -88,14 +88,41 @@
         .模块-name { flex: 1; font-size: 18px; }
         .arrow { color: #999; font-size: 18px; }
 
-        .bottom-info {
+        .footer {
             background: #fff;
             margin: 10px;
             padding: 20px;
             border-radius: 10px;
-            font-size: 15px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .info {
+            flex: 1;
             line-height: 1.7;
-            color: #333;
+            font-size: 15px;
+        }
+        .qrcode {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .qrcode img {
+            width: 120px;
+            height: 120px;
+            border-radius: 8px;
+        }
+        .qrcode-text {
+            line-height: 1.6;
+        }
+        .qrcode-text h3 {
+            font-size: 16px;
+            color: #000;
+        }
+        .qrcode-text p {
+            font-size: 14px;
+            color: #666;
         }
     </style>
 </head>
@@ -106,6 +133,7 @@
     <img src="banner.jpg" alt="山西爱农晋祠现代农业园">
 </div>
 
+<!-- 大棚信息 -->
 <div class="container">
     <div class="棚头">
         <div class="img-box">
@@ -142,6 +170,7 @@
     </div>
 </div>
 
+<!-- 功能模块 -->
 <div class="模块">
     <a class="模块项" href="环境.html">
         <div class="模块-icon">🍃</div>
@@ -155,13 +184,24 @@
     </a>
 </div>
 
-<!-- 底部介绍 + 定位 -->
-<div class="bottom-info">
-    <strong>山西爱农晋祠现代农业园</strong><br>
-    电话预购：15235197597<br><br>
-    农场名称：山西爱农晋祠现代农业园<br>
-   爱农晋祠智慧农场位于太原市晋源区王郭村，由山西爱农晋祠现代农业有限公司投资兴建，总投资1500万元，总占地700余亩，建有高标准智能温室大棚42座。园区主要种植草莓、甜瓜、蘑菇、西红柿等优质果蔬，积极推行现代农业种植技术。项目创新运营模式，将传统雇佣制改为农户合伙制，免费提供大棚给农户种植经营，有效激发生产积极性，实现农民增收、农业增效，以产业发展助力乡村振兴。<br><br>
-    <strong style="color:#00a653;">📍 <a href="https://ditu.amap.com/search?query=太原市晋源区王郭村" target="_blank" style="color:#00a653; text-decoration:none;">点击查看位置 / 导航前往</a></strong>
+<!-- 底部：园区介绍 + 二维码 + 文字 -->
+<div class="footer">
+    <div class="info">
+        <strong>山西爱农晋祠现代农业园</strong><br>
+        电话预购：15235197597<br><br>
+        农场名称：山西爱农晋祠现代农业园<br>
+        园区位于太原市晋源区王郭村，由返乡新农人邓万杰创办，总占地700余亩。<br>
+        园区将撂荒40年的汾河荒滩改造为良田，建设现代化智能温室大棚，采用无土栽培、水肥一体化等先进技术，主要种植优质瓜果蔬菜。<br><br>
+        <strong style="color:#00a653;">📍 <a href="https://ditu.amap.com/search?query=太原市晋源区王郭村" target="_blank" style="color:#00a653; text-decoration:none;">点击导航前往园区</a></strong>
+    </div>
+
+    <div class="qrcode">
+        <img src="qrcode.jpg" alt="公众号二维码">
+        <div class="qrcode-text">
+            <h3>云上爱农公众号</h3>
+            <p>为农业插上智慧的翅膀<br>让丰收在云上翱翔。</p>
+        </div>
+    </div>
 </div>
 
 </body>
