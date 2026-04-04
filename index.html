@@ -3,79 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>生长环境 - 爱农晋祠智慧农场</title>
+    <title>爱农晋祠智慧农场 - 一号大棚</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: sans-serif;
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif; }
+        body { background: #f5f5f5; }
+        .header { background: #000; color: #fff; padding: 15px; text-align: center; }
+        .container { background: #fff; margin: 10px; border-radius: 10px; padding: 15px; }
+        
+        .棚头 { 
+            display: flex; 
+            gap: 15px; 
+            margin-bottom: 15px; 
+            align-items: center; 
         }
-        body {
-            background: #f5f5f5;
-        }
-        .header {
-            background: #000;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        .container {
-            padding: 20px;
-        }
-        .title {
-            font-size: 22px;
-            font-weight: bold;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .img-box {
-            margin-bottom: 12px;
-            border-radius: 12px;
+        .棚头 .img-box {
+            width: 120px; 
+            height: 90px; 
+            border-radius: 8px; 
             overflow: hidden;
+            border: 1px solid #eee;
         }
-        .img-box img {
+        .棚头 .img-box img { 
             width: 100%;
+            height: 100%;
+            object-fit: cover;
             display: block;
         }
-        .back {
-            text-align: center;
-            margin-top: 20px;
+
+        .棚信息 { flex: 1; }
+        .棚名 { font-size: 24px; font-weight: bold; margin-bottom: 5px; }
+        .棚ID { color: #666; font-size: 14px; margin-bottom: 10px; }
+        .状态 { background: #00c853; color: #fff; padding: 5px 12px; border-radius: 20px; font-size: 14px; display: inline-block; }
+        
+        .基础信息 { 
+            display: grid; 
+            grid-template-columns: 1fr 1fr; 
+            gap: 10px; 
+            margin: 15px 0; 
         }
-        .back a {
-            display: inline-block;
-            background: #00c853;
-            color: #fff;
-            padding: 10px 25px;
-            border-radius: 30px;
+        .信息项 { 
+            background: #f5f5f5; 
+            padding: 12px; 
+            border-radius: 8px; 
+            font-size: 16px; 
+        }
+        
+        .模块 { margin: 20px 0; padding: 15px; background: #fff; border-radius: 10px; }
+        .模块项 {
+            display: flex; align-items: center;
+            padding: 15px 0; border-bottom: 1px solid #eee;
+            cursor: pointer;
             text-decoration: none;
+            color: inherit;
+        }
+        .模块项:last-child { border-bottom: none; }
+        .模块-icon { font-size: 24px; margin-right: 10px; }
+        .模块-name { flex: 1; font-size: 18px; }
+        .arrow { color: #999; font-size: 18px; }
+
+        /* 生长环境图片 整合版 */
+        .环境图片 {
+            margin-top: 15px;
+            display: none;
+        }
+        .环境图片.show {
+            display: block;
+        }
+        .环境图片 img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            display: block;
         }
     </style>
 </head>
 <body>
     <div class="header">
-        <h2>生长环境</h2>
+        <h1>爱农晋祠智慧农场</h1>
+        <p style="font-size:14px; opacity:0.8;">fx.sansun.cc</p>
     </div>
 
     <div class="container">
-        <div class="title">大棚实拍</div>
+        <div class="棚头">
+            <div class="img-box">
+                <img src="dapeng.jpg" alt="一号大棚实拍">
+            </div>
+            <div class="棚信息">
+                <div class="棚名">一号大棚</div>
+                <div class="棚ID">ID: 一号大棚</div>
+                <div class="状态">正常种植</div>
+            </div>
+        </div>
 
-        <!-- 你的 4 张环境图片 -->
-        <div class="img-box">
+        <div class="基础信息">
+            <div class="信息项">种植户 白要忠</div>
+            <div class="信息项">种植作物 </div>
+            <div class="信息项">种植品种 </div>
+            <div class="信息项">种植时间 </div>
+        </div>
+
+        <!-- 👇 生长环境 4 张图片 全部整合在这里 👇 -->
+        <div class="环境图片" id="envImg">
             <img src="env1.jpg.jpg">
-        </div>
-        <div class="img-box">
             <img src="env2.jpg.jpg">
-        </div>
-        <div class="img-box">
             <img src="env3.jpg.jpg">
-        </div>
-        <div class="img-box">
             <img src="env4.jpg.jpg">
         </div>
+    </div>
 
-        <div class="back">
-            <a href="index.html">← 返回主页</a>
+    <div class="模块">
+        <!-- 点击生长环境 → 直接展开图片 -->
+        <div class="模块项" onclick="document.getElementById('envImg').classList.toggle('show')">
+            <div class="模块-icon">🍃</div>
+            <div class="模块-name">生长环境</div>
+            <div class="arrow">></div>
+        </div>
+
+        <div class="模块项">
+            <div class="模块-icon">🌱</div>
+            <div class="模块-name">种植详情</div>
+            <div class="arrow">></div>
         </div>
     </div>
 </body>
